@@ -10,23 +10,28 @@
     <script src="https://github.com/scottjehl/Respond/blob/master/dest/respond.min.js"></script>
   </head>
   <body>
+    <input id="toggle" type="checkbox">
     <header>
       <nav class="mobile-nav-1">
         <figure class="fl-left">
           <img alt="The Next Web" src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg">
         </figure>
         <label class="fl-right" for="toggle"> &#8801;</label>
-        <input id="toggle" type="checkbox" name="" value="">
+
         <a class="fl-right" href="#"><i class="fas fa-search"></i></a>
         <div class="cl-both"></div>
-        <nav class="mobile-nav-2">
-          <label for="toggle">X</label>
+      </nav>
+      <nav class="mobile-nav-2">
+        <div class="close">
+          <label class="fl-right" for="toggle"><i class="fas fa-times fa-2x"></i></label>
+        </div>
+        <div class="mobile-nav-scroll">
           <div class="nav-icons">
             <ul>
               <li> <a href="#"><i class="fas fa-envelope"></i></a> </li>
               <li> <a href="#"><i class="fab fa-facebook-square"></i></a> </li>
               <li> <a href="#"><i class="fab fa-twitter"></i></a> </li>
-              <li> <a href="#"><i class="fab fa google-plus-g"></i></a> </li>
+              <li> <a href="#"><i class="fab fa-google-plus-g"></i></a> </li>
               <li> <a href="#"><i class="fab fa-linkedin-in"></i></a> </li>
               <li> <a href="#"><i class="fab fa-youtube"></i></a> </li>
               <li> <a href="#"><i class="fab fa-pinterest-p"></i></a> </li>
@@ -70,11 +75,11 @@
                 <li> <a href="#">Cyberspace Culture</a> </li>
               </ul>
             </div>
-          </div>
-        </nav>
+          </div><!-- closing mobile-sub-nav-->
+        </div><!--closing mobile-nav-scroll-->
       </nav>
     </header>
-    <main>
+    <main id="main">
       <div class="caption">
         That's a wrap on TNW2019! Don't be sad - get 50% off your TNW2020  ticket <i class="fas fa-long-arrow-alt-right"></i>
       </div>
