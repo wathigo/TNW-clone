@@ -12,7 +12,9 @@ body{
   background-color: blue;
 }
 .mobile-nav-1{
+  position: relative;
   height: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
 }
 .mobile-nav-1 figure{
   background-color: red;
@@ -27,7 +29,7 @@ body{
   line-height: 50px;
   margin: 0 auto;
 }
-.mobile-nav-1::after{
+.cl-both{
   content: '';
   clear: both;
   display: table;
@@ -35,26 +37,45 @@ body{
 #toggle{
   display: none;
 }
-.nav-right{
-  height: 50px;
-  padding: 0;
+.mobile-nav-1 label{
+  color: red;
+  cursor: pointer;
 }
-.nav-right label{
-  font-size: 2em;
-  background-color: red;
-}
-.nav-right a, .nav-right label{
+.mobile-nav-1 a, .mobile-nav-1 label{
   padding: 0 10px;
   height: 50px;
-  /* line-height: 50px; */
+  line-height: 50px;
+  font-size: 2em;
 }
-.nav-right a{
-  font-size: 1.11em;
-  margin: 0;
-}
-.search-icon{
+.mobile-nav-1 a{
   display: inline-block;
   height: 50px;
-  margin-left: 20px;
-  border: 1px solid grey;
+  color: grey;
+  color: rgba(0, 0, 0, 0.2);
+  border-left: 1px solid grey;
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  border-right: 1px solid grey;
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  font-size: 1.2em;
+}
+
+.mobile-nav-1 a:hover{
+  color: black;
+  opacity: 0.5
+}
+
+.mobile-nav-2{
+  display: none;
+  background-color: orange;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+#toggle:checked ~ nav{
+  display: block;
+}
+#toggle:checked ~ nav{
+  display: block;
 }
