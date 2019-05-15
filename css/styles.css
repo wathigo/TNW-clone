@@ -12,8 +12,27 @@ h2{
 h3{
   font-weight: bolder;
 }
-h3 a{
+h3 a, h5 a{
   text-decoration: none;
+}
+h1 a{
+  text-decoration: none;
+  color: rgb(255, 68, 34);
+}
+.orange-on-hover{
+  color: black;
+}
+.orange-on-hover:hover{
+  color: rgb(255, 68, 34);
+}
+h1.black-on-hover{
+  color: rgb(255, 68, 34);
+}
+.black-on-hover:hover{
+  color: black;
+}
+.ul-on-hover{
+  text-decoration: underline;
 }
 .fl-left{
   float: left;
@@ -203,4 +222,45 @@ header{
 }
 .article .author p i{
   padding: 0 3px 0 6px;
+}
+.latest-news-wrapper{
+  width: 90%;
+  margin: 0 auto;
+  /* display: flex;
+  flex-direction: column; */
+}
+.latest-news-wrapper .latest-posts{
+  width: 100%;
+}
+.latest-news-wrapper .latest-news section{
+  float: left;
+  width: 80%;
+  margin-left: 2%;
+}
+.latest-news-wrapper .latest-news section p{
+  font-size: 0.7em;
+  color: #000;
+  color: rgba(0, 0, 0, 0.4);
+}
+.latest-news section p a{
+  text-decoration: none;
+  color: inherit;
+}
+.latest-news section p a:hover{
+  color: rgba(0, 0, 0, 0.7);
+}
+.latest-news-wrapper .latest-news::after{
+  clear: both;
+  display: table;
+  content: '';
+}
+.latest-news-wrapper .latest-news figure{
+  width: 18%;
+  height: 80px;
+  margin: 0;
+  float: left;
+}
+.latest-news-wrapper figure img{
+  width: 100%;
+  height: 100%;
 }
