@@ -1,0 +1,60 @@
+body{
+  padding: 0;
+  margin: 0;
+}
+.fl-left{
+  float: left;
+}
+.fl-right{
+  float: right;
+}
+.bg-blue{
+  background-color: blue;
+}
+.mobile-nav-1{
+  height: 50px;
+}
+.mobile-nav-1 figure{
+  background-color: red;
+  height: 50px;
+  width: 100px;
+  margin: 0;
+}
+.mobile-nav-1 figure img{
+  display: block;
+  height: 50px;
+  width: 70%;
+  line-height: 50px;
+  margin: 0 auto;
+}
+.mobile-nav-1::after{
+  content: '';
+  clear: both;
+  display: table;
+}
+#toggle{
+  display: none;
+}
+.nav-right{
+  height: 50px;
+  padding: 0;
+}
+.nav-right label{
+  font-size: 2em;
+  background-color: red;
+}
+.nav-right a, .nav-right label{
+  padding: 0 10px;
+  height: 50px;
+  /* line-height: 50px; */
+}
+.nav-right a{
+  font-size: 1.11em;
+  margin: 0;
+}
+.search-icon{
+  display: inline-block;
+  height: 50px;
+  margin-left: 20px;
+  border: 1px solid grey;
+}
