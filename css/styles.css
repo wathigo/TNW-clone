@@ -112,7 +112,7 @@ h1 .black-on-hover{
 #toggle:checked ~ header .close label i{
   transform: rotate(360deg);
 }
-#toggle:checked ~ #main, footer{
+#toggle:checked ~ #main, #toggle:checked ~ footer{
   display: none;
 }
 #toggle:checked ~ header .mobile-nav-1 label{
@@ -223,7 +223,7 @@ header{
 .article .author p i{
   padding: 0 3px 0 6px;
 }
-.latest-news-wrapper{
+.latest-news-wrapper, .latest-deals-wrapper{
   width: 90%;
   margin: 0 auto 30px auto;
   /* display: flex;
@@ -232,12 +232,12 @@ header{
 .latest-news-wrapper .latest-posts{
   width: 100%;
 }
-.latest-news-wrapper .latest-news section{
+.latest-news-wrapper .latest-news section, .latest-deals-wrapper .latest-deals section{
   float: left;
   width: 80%;
   margin-left: 2%;
 }
-.latest-news-wrapper .latest-news section p{
+.latest-news-wrapper .latest-news section p, .latest-deals-wrapper .latest-deals section p{
   font-size: 0.7em;
   color: #000;
   color: rgba(0, 0, 0, 0.4);
@@ -249,16 +249,19 @@ header{
 .latest-news section p a:hover{
   color: rgba(0, 0, 0, 0.7);
 }
-.latest-news-wrapper .latest-news::after{
+.latest-news-wrapper .latest-news::after, .latest-deals-wrapper .latest-deals::after{
   clear: both;
   display: table;
   content: '';
 }
-.latest-news-wrapper .latest-news figure{
+.latest-news-wrapper .latest-news figure, .latest-deals-wrapper .latest-deals figure{
   width: 18%;
   height: 80px;
   margin: 0;
   float: left;
+}
+.latest-news, .latest-deals{
+  margin-bottom: 12px;
 }
 figure img{
   width: 100%;
