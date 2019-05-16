@@ -238,8 +238,15 @@ header{
 .article .author p{
   margin: 5px 0 0 0 ;
   font-size: 0.85em;
-  color: #000;
-  color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  color: rgba(255, 255, 255, 0.6);
+}
+.article .author p a{
+  text-decoration: none;
+  color: inherit;
+}
+.article .author p a:hover{
+  color: #fff;
 }
 .article .author p i{
   padding: 0 3px 0 6px;
@@ -545,4 +552,16 @@ footer ul{
 }
 .footer-bottom img:last-of-type{
   height: 10px;
+}
+
+@media only screen and (min-width:750px){
+  .extras-wrapper{
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .extras{
+    width: 49%;
+  }
 }
