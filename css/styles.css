@@ -25,7 +25,7 @@ h1 a{
 .orange-on-hover:hover{
   color: rgb(255, 68, 34);
 }
-h1.black-on-hover{
+h1 .black-on-hover{
   color: rgb(255, 68, 34);
 }
 .black-on-hover:hover{
@@ -225,7 +225,7 @@ header{
 }
 .latest-news-wrapper{
   width: 90%;
-  margin: 0 auto;
+  margin: 0 auto 30px auto;
   /* display: flex;
   flex-direction: column; */
 }
@@ -260,7 +260,104 @@ header{
   margin: 0;
   float: left;
 }
-.latest-news-wrapper figure img{
+figure img{
   width: 100%;
   height: 100%;
+}
+.latest-funding-wrapper{
+  width: 90%;
+  margin: 0 auto;
+}
+.latest-funding-wrapper ul{
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+.latest-funding-wrapper ul li a{
+  text-decoration: none;
+  color: rgb(255, 68, 34);
+}
+.latest-funding-wrapper ul li{
+  margin-bottom: 10px;
+}
+ section.latest-funding > h3{
+  background-color:rgb(255, 68, 34);
+  width: 100%;
+  height: 40px;
+  margin: 0;
+}
+section.latest-funding > h3 a{
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  margin-left: 25%;
+}
+.latest-funding div:first-of-type{
+  background-color: #fff;
+  background-color: rgba(255, 68, 34, 0.2);
+  width: 100%;
+  height: 60px;
+}
+.latest-funding div:first-of-type a{
+  display: block;
+  height: 60px;
+  width: 80%;
+  margin-left: 25%;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.latest-funding div:first-of-type a p{
+  padding-top: 11px;
+}
+.latest-funding div:first-of-type a p span{
+  display: block;
+  font-size: 0.72em;
+  font-weight: lighter;
+  opacity: 0.7;
+}
+.latest-funding{
+  position: relative;
+}
+.latest-funding figure{
+  position: absolute;
+  margin: 0;
+  top: 10px;
+  left: 10px;
+  width: 60px;
+  height: 60px;
+}
+.latest-funding div:nth-of-type(2) {
+  padding: 12px 0 8px 10px;
+  border-bottom: 1px solid rgba(255, 68, 34);
+  border-bottom: 1px solid rgba(255, 68, 34, 0.2);
+  background-color: #fff;
+  background-color: rgba(255, 68, 34, 0.03);
+}
+.latest-funding div:nth-of-type(n+2) a {
+  text-decoration: none;
+  color: black;
+  color: rgba(0, 0, 0, 0.83);
+}
+.latest-funding div:nth-of-type(2) a:hover, .latest-funding div:nth-of-type(2) a i{
+  color: #000;
+}
+.latest-funding div:nth-of-type(2) a i{
+  padding-right: 5px;
+}
+.latest-funding div:nth-of-type(2) a:not(i){
+  font-size: 0.9em;
+}
+.latest-funding div:nth-of-type(2) p:last-of-type{
+  margin-top: 10px;;
+}
+.latest-funding div:last-of-type{
+  height: 60px;
+  background-color: #fff;
+  background-color: rgba(255, 68, 34, 0.03);
+  font-size: 0.9em;
+  padding: 10px 0 0 12px;
+}
+.fainter{
+  opacity: 0.5;
 }
