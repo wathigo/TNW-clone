@@ -54,7 +54,7 @@ h1 .black-on-hover{
   z-index: 0;
 }
 .mobile-nav-1 figure{
-  background-color: red;
+  background: linear-gradient(to bottom right,#c09,#f42 85%);
   height: 50px;
   width: 100px;
   margin: 0;
@@ -220,6 +220,9 @@ header{
   padding: 80px 0 20px 15px;
   margin-bottom: 10px;
 }
+.article:hover{
+  /* TO DO */
+}
 .articles-wrapper{
   display: flex;
   flex-direction: column;
@@ -261,9 +264,7 @@ header{
   width: 100%;
 }
 .latest-news-wrapper .latest-news section, .latest-deals-wrapper .latest-deals section{
-  float: left;
   width: 80%;
-  margin-left: 2%;
 }
 .latest-news-wrapper .latest-news section p, .latest-deals-wrapper .latest-deals section p{
   font-size: 0.7em;
@@ -277,19 +278,16 @@ header{
 .latest-news section p a:hover{
   color: rgba(0, 0, 0, 0.7);
 }
-.latest-news-wrapper .latest-news::after, .latest-deals-wrapper .latest-deals::after{
-  clear: both;
-  display: table;
-  content: '';
-}
 .latest-news-wrapper .latest-news figure, .latest-deals-wrapper .latest-deals figure{
   width: 18%;
   height: 80px;
   margin: 0;
-  float: left;
 }
 .latest-news, .latest-deals{
   margin-bottom: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 figure img{
   width: 100%;
@@ -564,4 +562,58 @@ footer ul{
   .extras{
     width: 49%;
   }
+  .articles-wrapper{
+    width: 98%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 330px;
+  }
+  .article{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    padding-left: 15px;
+  }
+  .article-1{
+    width: 65%;
+    height: 100%;
+    padding: 150px 0 20px 15px;
+  }
+  .article .sm-mg{
+    font-size: 0.85em;
+    font-weight: 400;
+  }
+  .article-1 .no-mg{
+    font-size: 2em;
+  }
+  .article-2 section{
+    height: 49%;
+    padding: 25px 0 20px 15px;
+  }
+  .article-2{
+    height: 100%;
+    display: flex;
+    width: 34%;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .article-2 .no-mg{
+    font-weight: 700;
+  }
+  .latest-news-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  .latest-news{
+    width: 33%;
+    flex-direction: column;
+  }
+  .latest-news-wrapper .latest-news section, .latest-news-wrapper .latest-news figure{
+    margin: 0;
+    width: 100%;
+  }
+
 }
