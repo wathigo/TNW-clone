@@ -271,6 +271,9 @@ header{
   color: #000;
   color: rgba(0, 0, 0, 0.4);
 }
+.latest-news section a:first-of-type:hover{
+  border-bottom: 1px solid rgba(255, 68, 34, 0.3);
+}
 .latest-news section p a{
   text-decoration: none;
   color: inherit;
@@ -601,19 +604,70 @@ footer ul{
   .article-2 .no-mg{
     font-weight: 700;
   }
-  .latest-news-wrapper{
+  .latest-news-container{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     flex-wrap: wrap;
+    box-sizing: border-box;
   }
+  .latest-news-container::after{
+    content: '';
+    flex: auto;
+  }
+
   .latest-news{
-    width: 33%;
-    flex-direction: column;
+    display: block;
+    width: 32%;
+    padding-left: 1%;
   }
   .latest-news-wrapper .latest-news section, .latest-news-wrapper .latest-news figure{
     margin: 0;
     width: 100%;
   }
-
+  .latest-news-wrapper .latest-news figure{
+    height: 150px;
+    margin-bottom: 10px;
+  }
+  .latest-news-wrapper .latest-news section p{
+    margin-top: 10px;
+    font-size: 0.8em;
+  }
+  .latest-news-wrapper .latest-news section p a{
+    font-size: 1em;
+  }
+  .latest-news section a:first-of-type{
+    font-size: 1.17em;
+  }
+  .latest-funding-wrapper{
+    width: 95%;
+  }
+  .latest-funding-wrapper ul li{
+    display: inline-block;
+  }
+  .latest-funding-wrapper ul li:nth-of-type(2){
+    border-left: 1px solid rgb(255, 68, 34);
+    border-right: 1px solid rgb(255, 68, 34);
+    padding: 0 8px 0 8px;
+  }
+  .latest-funding-wrapper ul li a{
+    font-size: 1.1em;
+  }
+  .latest-funding-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  .latest-funding-container::after{
+    content: '';
+    flex: auto;
+  }
+  .latest-funding{
+    width: 32%;
+    box-sizing: border-box;
+  }
+  .latest-funding-container section:nth-of-type(2){
+    margin-right: 2%;
+    margin-left: 2%;
+  }
 }
