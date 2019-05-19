@@ -830,8 +830,13 @@ footer ul{
     position: absolute;
     right: 0;
   }
-  .desktop-nav-2 ul li:last-of-type a{
-    border-left: 1px rgba(0, 0, 0, 0.2);
-    border-right: 1px rgba(0, 0, 0, 0.2);
+  .desktop-nav-2 ul li:last-of-type i{
+    color: black;
+    color: rgba(0, 0, 0, 0.4);
+    height: 50px;
+    line-height: 50px;
+    padding: 0 10px;
+    border-left: 1px solid rgb(0, 0, 0);
+    border-left: 1px solid rgba(0, 0, 0, 0.42);
   }
 }
