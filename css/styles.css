@@ -1,5 +1,4 @@
 html{
-  overflow-y: visible;
   overflow-x: hidden;
 }
 body{
@@ -234,6 +233,9 @@ header{
 }
 .no-mg{
   margin: 0;
+}
+.no-pd{
+  padding: 0;
 }
 .article .sm-mg{
   margin-bottom: 5px;
@@ -558,6 +560,10 @@ footer ul{
 .latest-deals .discount{
   display: none;
 }
+.desktop-nav-1, .desktop-nav-2{
+  display: none;
+  box-sizing: border-box;
+}
 
 @media only screen and (min-width:750px){
   .extras-wrapper{
@@ -702,8 +708,126 @@ footer ul{
   .extras-wrapper .article{
       padding: 150px 0 15px 10px;
   }
-
   .footer-icons{
     width: 50%;
+  }
+  .mobile-nav-1, .mobile-nav-2{
+    display: none;
+  }
+  .desktop-nav-1 ul li, .desktop-nav-2 ul li{
+    display: inline-block;
+    color: #fff;
+  }
+  .desktop-nav-1{
+    position: relative;
+    display: block;
+    width: 100%;
+    background-color: #000;
+    height: 30px;
+    padding-left: 110px;
+  }
+  .desktop-nav-1 figure{
+    position: absolute;
+    background: linear-gradient(to bottom right,#c09,#f42 85%);
+    height: 80px;
+    width: 100px;
+    left: 0;
+    z-index: 2;
+  }
+  .desktop-nav-2 figure{
+    position: absolute;
+    background: linear-gradient(to bottom right,#c09,#f42 85%);
+    height: 50px;
+    width: 100px;
+    left: 0;
+    z-index: 1;
+  }
+  .desktop-nav-2{
+    display: block;
+    position: sticky;
+    height: 50px;
+    width: 100%;
+    top: 0;
+    padding-left: 110px;
+  }
+
+  .caption{
+    top: 50px;
+    position: sticky;
+  }
+  main{
+    margin-top: 0;
+  }
+  .desktop-nav-1 ul li a{
+    line-height: 30px;
+    height: 30px;
+    padding-left: 15px;
+    color: #fff;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.86em;
+    text-decoration: none;
+  }
+  .desktop-nav-1 ul li:first-of-type a, .desktop-nav-1 ul li a:hover{
+    color: #fff;
+  }
+  .dropdown-content::before{
+    content: '';
+    position: absolute;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black;
+    top: -100%;
+    left: 20px;
+    background-color: blue;
+  }
+  .dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #000;
+    width: 220px;
+    top: 45px;
+    z-index: 4;
+    left: 0;
+  }
+  .dropdown{
+    position: relative;
+  }
+  .desktop-nav-1 ul li:nth-of-type(2):hover .dropdown-content, .desktop-nav-1 ul li:nth-of-type(3):hover .dropdown-content{
+    top: 32px;
+    /* transition: top 1s ease-in-out; TODO */
+    display: block;
+  }
+  .dropdown .dropdown-content li{
+    display: block;
+    margin-bottom: 5px
+  }
+  .dropdown .dropdown-content li a:first-of-type{
+    color: #fff;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .desktop-nav-2 ul li a{
+    color: #fff;
+    color: rgba(0, 0, 0, 0.6);
+    padding-left: 10px;
+    height: 50px;
+    line-height: 50px;
+    text-decoration: none;
+    font-weight: 600px;
+    font-size: 0.85em;
+  }
+  .desktop-nav-2 ul li a:hover{
+    color: #000;
+  }
+  .desktop-nav-2 ul{
+    position: relative;
+    width: 100%;
+  }
+  .desktop-nav-2 ul li:last-of-type{
+    position: absolute;
+    right: 0;
+  }
+  .desktop-nav-2 ul li:last-of-type a{
+    border-left: 1px rgba(0, 0, 0, 0.2);
+    border-right: 1px rgba(0, 0, 0, 0.2);
   }
 }
