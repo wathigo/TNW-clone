@@ -725,6 +725,7 @@ footer ul{
     background-color: #000;
     height: 30px;
     padding-left: 110px;
+    z-index: 7;
   }
   .desktop-nav-1 figure{
     position: absolute;
@@ -745,10 +746,12 @@ footer ul{
   .desktop-nav-2{
     display: block;
     position: sticky;
+    background-color: #fff;
     height: 50px;
     width: 100%;
     top: 0;
     padding-left: 110px;
+    z-index: 6;
   }
 
   .caption{
@@ -814,6 +817,7 @@ footer ul{
     text-decoration: none;
     font-weight: 600px;
     font-size: 0.85em;
+
   }
   .desktop-nav-2 ul li a:hover{
     color: #000;
