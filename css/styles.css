@@ -835,8 +835,8 @@ footer ul{
     color: rgba(0, 0, 0, 0.4);
     height: 50px;
     line-height: 50px;
-    padding: 0 10px;
+    padding: 0 15px;
     border-left: 1px solid rgb(0, 0, 0);
-    border-left: 1px solid rgba(0, 0, 0, 0.42);
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
   }
 }
