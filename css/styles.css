@@ -260,8 +260,6 @@ header{
 .latest-news-wrapper, .latest-deals-wrapper{
   width: 90%;
   margin: 0 auto 30px auto;
-  /* display: flex;
-  flex-direction: column; */
 }
 .latest-news-wrapper .latest-posts{
   width: 100%;
