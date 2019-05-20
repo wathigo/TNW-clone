@@ -206,7 +206,6 @@ header{
   left: 0;
   z-index: 0;
   overflow: hidden;
-  display: none;
 }
 .caption p{
    height: 30px;
@@ -318,14 +317,17 @@ figure img{
 .latest-funding-wrapper ul li{
   margin-bottom: 10px;
 }
-.latest-funding > .latest-funding:first-child{
+section.latest-funding > p:first-child{
   background-color:rgb(255, 68, 34);
   width: 100%;
   height: 40px;
   overflow: hidden;
   margin: 0;
 }
-.latest-funding > .latest-funding:first-child a{
+section.latest-funding > p:first-child a{
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: bold;
   height: 40px;
   line-height: 40px;
   color: #fff;
@@ -886,7 +888,8 @@ footer ul{
                   rgba(0, 0, 0) 80%
                   ) no-repeat,
                 url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/02/Huawei-Mate-20-Pro-1-of-9-796x417.jpg');
-background-size: 350px 250px, 100% 100%, 100% 100%;
+    background-size: 350px 250px, 100% 100%, 100% 100%;
+    z-index: -1;
   }
   .article-1 .no-mg{
     font-size: 3em;
