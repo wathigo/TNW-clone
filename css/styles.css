@@ -5,16 +5,16 @@ body{
 padding: 0;
 margin: 0;
 }
-h2{
+h3{
   font-size: 0.75em;
 }
-h3{
+h4{
   font-weight: bolder;
 }
-h3 a, h5 a{
+h4 a, h5 a{
   text-decoration: none;
 }
-h1 a{
+h2 a{
   text-decoration: none;
   color: rgb(255, 68, 34);
 }
@@ -24,7 +24,7 @@ h1 a{
 .orange-on-hover:hover{
   color: rgb(255, 68, 34);
 }
-h1 .black-on-hover{
+h2 .black-on-hover{
   color: rgb(255, 68, 34);
 }
 .black-on-hover:hover{
@@ -49,6 +49,7 @@ h1 .black-on-hover{
   width: 100%;
   top: 0;
   left: 0;
+  border: 1px solid rgb(0, 0, 0);
   border: 1px solid rgba(0, 0, 0, 0.2);
   z-index: 0;
 }
@@ -70,7 +71,7 @@ h1 .black-on-hover{
   clear: both;
   display: table;
 }
-#toggle{
+.toggle{
   display: none;
 }
 .mobile-nav-1 label{
@@ -113,17 +114,17 @@ main{
   margin-top: 80px;
   z-index: -1;
 }
-#toggle:checked ~ header .mobile-nav-2{
-  right: 0px;
+.toggle:checked ~ header .mobile-nav-2{
+  right: 0;
   transition: right 0.4s ease-out;
 }
-#toggle:checked ~ header .close label i{
+.toggle:checked ~ header .close label i{
   transform: rotate(360deg);
 }
-#toggle:checked ~ #main, #toggle:checked ~ footer{
+.toggle:checked ~ main, .toggle:checked ~ footer{
   display: none;
 }
-#toggle:checked ~ header .mobile-nav-1 label{
+.toggle:checked ~ header .mobile-nav-1 label{
   transform: rotate(360deg);
 }
 header{
@@ -220,9 +221,9 @@ header{
   padding: 80px 0 20px 15px;
   margin-bottom: 10px;
 }
-.article:hover{
-  /* TO DO */
-}
+/* .article:hover{
+  TODO
+} */
 .articles-wrapper{
   display: flex;
   flex-direction: column;
@@ -275,6 +276,7 @@ header{
   color: rgba(0, 0, 0, 0.4);
 }
 .latest-news section a:first-of-type:hover{
+  border-bottom: 1px solid rgb(255, 68, 34);
   border-bottom: 1px solid rgba(255, 68, 34, 0.3);
 }
 .latest-news section p a{
@@ -282,6 +284,7 @@ header{
   color: inherit;
 }
 .latest-news section p a:hover{
+  color: rgb(0, 0, 0);
   color: rgba(0, 0, 0, 0.7);
 }
 .latest-news-wrapper .latest-news figure, .latest-deals-wrapper .latest-deals figure{
@@ -315,14 +318,14 @@ figure img{
 .latest-funding-wrapper ul li{
   margin-bottom: 10px;
 }
- section.latest-funding > h3{
+.latest-funding > .latest-funding:first-child{
   background-color:rgb(255, 68, 34);
   width: 100%;
   height: 40px;
   overflow: hidden;
   margin: 0;
 }
-section.latest-funding > h3 a{
+.latest-funding > .latest-funding:first-child a{
   height: 40px;
   line-height: 40px;
   color: #fff;
@@ -353,6 +356,7 @@ section.latest-funding > h3 a{
   display: block;
   font-size: 0.72em;
   font-weight: lighter;
+  color: rgb(0, 0, 0);
   color: rgba(0, 0, 0, 0.7);
 }
 .latest-funding{
@@ -369,7 +373,7 @@ section.latest-funding > h3 a{
 }
 .latest-funding div:nth-of-type(2) {
   padding: 12px 0 8px 10px;
-  border-bottom: 1px solid rgba(255, 68, 34);
+  border-bottom: 1px solid rgb(255, 68, 34);
   border-bottom: 1px solid rgba(255, 68, 34, 0.2);
   background-color: #fff;
   background-color: rgba(255, 68, 34, 0.03);
@@ -393,7 +397,7 @@ section.latest-funding > h3 a{
 }
 .latest-funding div:last-of-type{
   min-height: 60px;
-  background-color: #fff;
+  background-color: rgb(255, 68, 34);
   background-color: rgba(255, 68, 34, 0.03);
   padding: 10px 0 0 12px;
 }
@@ -401,7 +405,7 @@ section.latest-funding > h3 a{
   font-size: 0.7em;
 }
 .fainter{
-  color: rgba(0, 0, 0);
+  color: rgb(0, 0, 0);
   color: rgba(0, 0, 0, 0.5);
 }
 .extras-wrapper{
@@ -427,6 +431,7 @@ section.latest-funding > h3 a{
   color: rgb(255, 68, 34);
 }
 .latest div:first-of-type p a:hover{
+  border-bottom: 1px solid rgb(255, 68, 34);
   border-bottom: 1px solid rgba(255, 68, 34, 0.3);
 }
 .latest div:last-of-type{
@@ -452,12 +457,14 @@ section.latest-funding > h3 a{
 }
 
 .list{
+  border-bottom: 1px solid rgb(0, 0, 0);
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
   padding: 10px 0;
 }
 .list p a{
   color: black;
   text-decoration: none;
+  color: rgb(0, 0, 0);
   color: rgba(0, 0, 0, 0.7);
   font-size: 0.7em;
 }
@@ -465,7 +472,7 @@ section.latest-funding > h3 a{
   width: 4%;
   float: left;
   margin: 0;
-  color: rgba(255, 68, 34);
+  color: rgb(255, 68, 34);
 }
 .list p:last-child{
   width: 90%;
@@ -552,7 +559,7 @@ footer ul{
   color: rgba(255, 255, 255, 0.7);
 }
 .footer-bottom p span{
-  color: rgba(255, 68, 34);
+  color: rgb(255, 68, 34);
 }
 .footer-bottom img:first-of-type{
   width: 30px;
@@ -825,7 +832,7 @@ footer ul{
     height: 50px;
     line-height: 50px;
     text-decoration: none;
-    font-weight: 600px;
+    font-weight: 600;
     font-size: 0.85em;
 
   }
