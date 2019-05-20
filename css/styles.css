@@ -568,7 +568,9 @@ footer ul{
   display: none;
   box-sizing: border-box;
 }
-
+.article-date{
+  display: none;
+}
 @media only screen and (min-width:750px){
   .extras-wrapper{
     width: 95%;
@@ -857,7 +859,7 @@ footer ul{
     top: 0;
   }
   main{
-    margin-top: 0;
+    margin-top: 2px;
   }
   .desktop-nav-1 figure, .desktop-nav-2 figure{
     display: none;
@@ -867,14 +869,24 @@ footer ul{
     margin: 0;
   }
   .article-1{
-    padding: 140px 0 20px 15px;
+    position: relative;
+    padding: 260px 0 20px 15px;
+    background: url('https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg')20px -60px no-repeat,
+                linear-gradient(
+                  to bottom,
+                  rgba(255, 0, 0, 0.9),
+                  rgba(255, 255, 255, 0.3),
+                  rgba(0, 0, 0) 80%
+                  ) no-repeat,
+                url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/02/Huawei-Mate-20-Pro-1-of-9-796x417.jpg');
+background-size: 350px 250px, 100% 100%, 100% 100%;
   }
   .article-1 .no-mg{
     font-size: 3em;
   }
   .article-2 section{
     height: 49%;
-    padding: 60px 0 0 15px;
+    padding: 120px 0 0 15px;
   }
   .article-2 .no-mg{
     font-size: 1.35em;
@@ -886,8 +898,11 @@ footer ul{
     box-sizing: border-box;
   }
   .latest-funding{
-    width: 22%;
+    width: 24%;
     box-sizing: border-box;
+  }
+  .latest-funding-container section:nth-of-type(2){
+    margin: 0;
   }
   .latest-news-container::after,  .latest-deals-container::after{
     content: none;
@@ -897,23 +912,33 @@ footer ul{
     content: none;
     flex: none;
   }
-  .latest-funding-header{
+  .latest-deals-header{
+    margin-top: 60px;
+  }
+  .latest-funding-header, .latest-deals-header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 20px;
   }
-  .latest-funding-header .no-mg{
+  .latest-funding-header .no-mg, .latest-deals-header .no-mg{
     width: 50%;
   }
-  .latest-funding-header ul{
-    width: 40;
+  .latest-funding-header ul, .latest-deals-header p{
+    width: 40%;
     margin: 0;
+  }
+  .latest-deals-header p{
+    text-align: right;
+  }
+  .latest-deals-header p a{
+    text-decoration: none;
+    color: rgb(255, 68, 34);
   }
   .latest-funding-container section:last-of-type{
     display: block;
     box-sizing: border-box;
-    flex: auto;
+    width: 22%;
   }
   .footer-icons{
     width: 35%;
@@ -926,7 +951,7 @@ footer ul{
     line-height: 80px;
   }
   .articles-wrapper{
-    height: 450px;
+    height: 500px;
   }
   .desktop-nav-3 figure{
     position: absolute;
@@ -962,7 +987,18 @@ footer ul{
   .latest-news-wrapper .latest-news figure, .latest-deals-wrapper .latest-deals figure{
     height: 200px;
   }
-  .article{
+  .extras .article{
     height: 300px;
+  }
+  .latest-funding-wrapper{
+    width: 90%;
+  }
+  .article-date{
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: #fff;
+    color: rgba(255, 255, 255, 0.9);
   }
 }
